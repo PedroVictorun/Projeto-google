@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #202124;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 15px;
+  padding: 6px 14px;
+}
+
+.link-header {
+  color: #00000e;
+  font-size: 13px;
+}
+
+.svg-header {
+  width: 24px;
+  fill: #444746;
+}
+
+.icone-header {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.icone-header:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: rgba(60, 64, 67, 0.08);
+  border: 1px solid #f8f9fa;
+  color: #202124;
+  border-radius: 50%;
+}
+
+.icone-header:hover .subtext-app {
+  display: block;
+  border-radius: 4px;
+  background-color: #4f5355;
+  color: white;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 5px 10px;
+  width: max-content;
+  top: 125%;
+  left: -45%;
+  position: absolute;
+}
+
+.subtext-app {
+  display: none;
+}
+
+.botao-header {
+  font-family: Gogle Sans, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  background-color: #1a73e8;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 9px 29px;
+  border: none;
+}
+
+.botao-header:hover {
+  background-color: #1b66c9;
+  text-decoration: none;
+  border: none;
+  box-shadow: 0 0.5px 1px 0.5px #452d64, 0 0.5px 1px rgba(32, 33, 36, 0.28);
+  border-color: transparent;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  height: 100%;
+}
+
+.logo-google {
+  width: 272px;
+}
+
+.caixa-input {
+  max-width: 554px;
+  width: 100%;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 0px 14px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+}
+
+.caixa-input:hover {
+  box-shadow: 0 1px 2px rgba(32, 33, 36, 0.28);
+  border-color: transparent;
+}
+
+.caixa-input:focus-within {
+  box-shadow: 0 1px 2px rgba(32, 33, 36, 0.28);
+  border-color: transparent;
+}
+
+.svg-lupa {
+  height: 20px;
+  fill: #9aa0a6;
+  min-width: 20px;
+  line-height: 20px;
+}
+
+.input-pesquisa {
+  width: 100%;
+  line-height: 22px;
+  border: 0px;
+  outline: none;
+  font-size: 16px;
+  resize: none;
+}
+
+.caixa-icones {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.caixa-icones div {
+  cursor: pointer;
+  position: relative;
+}
+
+.caixa-icones svg {
+  height: 24px;
+  width: 24px;
+  display: block;
+}
+
+.caixa-teclado:hover:after {
+  content: "Ferramentas de Introdução";
+}
+.caixa-microfone:hover:after {
+  content: "Pesquisa por Voz";
+}
+.caixa-camera:hover:after {
+  content: "pesquisa por imagem";
+}
+
+.caixa-teclado:hover::after,
+.caixa-microfone:hover::after,
+.caixa-camera:hover::after {
+  border-radius: 4px;
+  background-color: rgb(79, 83, 85);
+  color: white;
+  font-weight: 500;
+  padding: 5px 10px;
+  font-size: 13px;
+  position: absolute;
+  width: max-content;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 10px);
+}
+
+.caixa-botoes {
+  display: flex;
+  gap: 8px;
+}
+
+.botao {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  padding: 10px 16px;
+  border: solid 1px transparent;
+  cursor: pointer;
+  color: #3c4043;
+}
+
+.botao:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
+}
+
+.texto-gogleplay {
+  color: rgb(77, 81, 86);
+  font-size: 13px;
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10vh;
+}
+
+.p-google {
+  color: inherit;
+  font-size: inherit;
+}
+
+.googleplay {
+  font-size: inherit;
+  color: #320172;
+}
+
+footer {
+  background-color: #f2f2f2;
+}
+
+.caixa-rodape {
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.caixa-rodape--borda {
+  border-bottom: 1px solid #dadce0;
+}
+
+.caixa-links {
+  display: flex;
+  gap: 30px;
+}
